@@ -1,6 +1,6 @@
-name: yeats-diary-xiaohongshu
+name: yeats-diary
 description: |
-  生成 Yeats_Liao "夜知日记" 风格的小红书跑步书籍笔记。
+  生成 Yeats_Liao "夜知日记" 风格的跑步笔记。
   
   特点：
   - 程序员/技术人视角解读跑步书籍
@@ -15,14 +15,13 @@ description: |
 
 examples:
   - user: "生成《当我谈跑步时我谈些什么》的笔记"
-    assistant: "使用 yeats-diary-xiaohongshu 生成完整笔记"
+    assistant: "使用 yeats-diary 生成完整笔记"
 
   - user: "《天生就会跑》怎么写"
     assistant: "调用skill生成技术人视角的读后感"
 
 tags:
-  - xiaohongshu
-  - content-creation
   - running
+  - content-creation
   - book-notes
   - tech-perspective
