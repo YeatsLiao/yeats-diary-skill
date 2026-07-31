@@ -21,19 +21,19 @@
 ## 项目结构
 
 ```
-yeats-diary/
+yeats-diary-skill/
 ├── README.md                          # 本文件
+├── LICENSE                            # MIT License
 ├── .gitignore                         # Git 忽略规则
-├── skill/                             # AI 生成 Skill
-│   ├── skill.yaml                     # Skill 定义
-│   ├── prompt.md                      # 核心 Prompt（角色/模式/结构/禁忌/示例）
-│   ├── books-database.md              # 跑步书籍数据库
-│   └── README.md                      # Skill 使用说明
-└── notes/                             # 跑步笔记
+├── SKILL.md                           # 核心 Skill（角色/模式/结构/禁忌/示例）
+├── references/                        # 参考资料
+│   └── books-database.md              # 跑步书籍数据库
+├── templates/                         # 写作模板（3 个案例）
+│   ├── template-a-book-review.md      # 整本书解读
+│   ├── template-b-one-quote.md        # 一句话启发
+│   └── template-c-run-experience.md   # 跑步体验型
+└── output/                            # 跑步笔记（本地保存，仅上传 3 篇示例）
     ├── 20250608_夜知日记_当我谈跑步时我谈些什么.md
-    ├── 20250608_夜知日记_天生就会跑.md
-    ├── 20250608_夜知日记_强风吹拂.md
-    ├── 20250609_夜知日记_书中一句话.md
     ├── ...
     └── 20260723_夜知日记_第五十三篇.md
 ```
@@ -66,16 +66,16 @@ yeats-diary/
 
 ## 使用 Skill 生成新笔记
 
-本项目包含一个 AI 内容生成 Skill，放在 `skill/` 目录下。
+本项目包含一个 AI 内容生成 Skill，核心定义在根目录 `SKILL.md`。
 
 使用方法：
 
-1. 读取 `skill/prompt.md` 了解角色设定、创作模式和写作规范
-2. 读取 `skill/books-database.md` 获取跑步书籍素材
-3. 按照四种模式之一生成笔记
+1. 读取 `SKILL.md` 了解角色设定、创作模式和写作规范
+2. 读取 `references/books-database.md` 获取跑步书籍素材
+3. 按照四种模式之一生成笔记，保存到 `output/`（仅本地，不提交）
 4. 每篇输出包含正文 + 8 个备选标题 + 互动问题 + 标签
 
-## License
+## 许可证
 
 MIT
 

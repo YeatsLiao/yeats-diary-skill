@@ -8,6 +8,12 @@ yeats-github-kill.md
 .uploads/
 .screenshots/
 
+# 本地生成的笔记（保留 3 篇示例，其余仅本地）
+output/*
+!output/20250608_夜知日记_当我谈跑步时我谈些什么.md
+!output/20250608_夜知日记_天生就会跑.md
+!output/20250608_夜知日记_强风吹拂.md
+
 # 临时工作目录
 /data/
 
